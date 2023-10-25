@@ -17,10 +17,6 @@ int score;
 
 int snakeTailX[50], snakeTailY[50];
 
-// int main()
-// {
-//     cout<<"hi"<<endl;
-// }
 int snakeLen;
 
 enum snakeDirection
@@ -32,9 +28,54 @@ snakeDirection sDir;
 
 bool isGameOver;
 
-void regenerate();
+//initialising some game variables
 
-void mainplay();
+void GameInit (void)
+{
+    isGameOver = false;
+    sDir = STOP;
+    x = height/2;
+    y = width/2;
+    foodX = rand() & width;   //so this will basically generate a randome coordinate for 
+    foodY = rand() & height;  //the fruit, and % will make sure that it lands withing the area given by height and width
+}
 
-void render();
 
+//craeting a function which will render the game and end it when game is over
+
+void GameRender(string playerName)
+{
+    system("cls");  //this will clear the console
+
+
+    //rendor the top walls
+
+    for(int i=0;i<width+2;i++)
+    {
+        cout<<"-";
+    }
+    cout<<endl;
+
+
+    //now to create the side walls which will be repeated height number of times
+
+    for(int i=0;i<height;i++)
+    {
+        for(int j =0;j<=width;j++)
+        {
+            if(j == 0 || j == width)
+            {
+                cout<<"|";
+            }
+            //creation of the snakes head
+            if(j == y && j == x)
+            {
+                cout<<"O";
+            }
+            else if(i == foodY && j == foodX)
+            {
+                cout<<"@";
+            }
+        }
+    }
+}
