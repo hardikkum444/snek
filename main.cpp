@@ -7,7 +7,7 @@ using namespace std;
 const int width = 80;
 const int height = 20;
 
-//decalring some global variables
+//decalring some global variables for this project
 
 int x,y;
 
