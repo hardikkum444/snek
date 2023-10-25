@@ -1,0 +1,8 @@
+1) so first of all I have used an enum for snakeDirection
+what is an enum?
+enum is used to decalre a enumeration, an enum consists of some constants given by the dev, which by default are given uniqe number values 
+
+//enum class Color { Red, Green, Blue };
+//Color myColor = Color::Green;
+
+so basically I have used an enum for snake direction movements.
