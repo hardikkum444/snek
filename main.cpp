@@ -92,6 +92,7 @@ void GameRender(string playerName)
             }
         }
     }
+    
     cout<<endl;
 
 //now to create the bottom walls
