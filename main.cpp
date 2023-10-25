@@ -76,6 +76,32 @@ void GameRender(string playerName)
             {
                 cout<<"@";
             }
+            else
+            {
+                bool prTail = false;
+                for(int k = 0;k<snakeLen;k++)
+                {
+                    if(snakeTailX[k] == j && snakeTailY[k] == i)
+                    {
+                        cout<<"o";
+                        prTail = true;
+                    }
+                }
+                if (!prTail)
+                cout<<" ";
+            }
         }
     }
+    cout<<endl;
+
+//now to create the bottom walls
+for(int i =0;i<width+2;i++)
+{
+    cout<<"-";
+}
+cout<<endl;
+
+//and now displaying the score 
+cout<<"score for "<<playerName<<" is "<<score<<endl;
+
 }

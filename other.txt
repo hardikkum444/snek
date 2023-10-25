@@ -6,3 +6,20 @@ enum is used to decalre a enumeration, an enum consists of some constants given 
 //Color myColor = Color::Green;
 
 so basically I have used an enum for snake direction movements.
+
+2) explanation of the following piece of code (why have i used it?)
+
+code:
+bool prTail = false;
+                for(int k = 0;k<snakeLen;k++)
+                {
+                    if(snakeTailX[k] == j && snakeTailY[k] == i)
+                    {
+                        cout<<"o";
+                        prTail = true;
+                    }
+                }
+                if (!prTail)
+                cout<<" ";
+
+explanation:

@@ -1,1 +1,2 @@
-system ("cls") = this command clears the console
+windows api commands
+system ("cls") = clears the console
