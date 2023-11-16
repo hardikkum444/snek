@@ -24,6 +24,22 @@ enum snakeDirection
     STOP = 0,LEFT,RIGHT,UP,DOWN
 };
 
+
+// int x,y;
+
+// int foodX, foodY;
+
+// int score;
+
+// int snakeTailX[50], snakeTailY[50];
+
+// int snakeLen;
+
+// enum snakeDirection
+// {
+//     STOP = 0,LEFT,RIGHT,UP,DOWN
+// };
+
 snakeDirection sDir;
 
 bool isGameOver;
